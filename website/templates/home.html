@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1 align="center">Hello, {{ user.first_name }}</h1>
+
+<form method="POST">
+  <label for="oneHundred">100</label><br>
+  <textarea name="oneHundred" id="oneHundred" class="form-control"></textarea>
+  <label for="fifty">50</label><br>
+  <textarea name="fifty" id="fifty" class="form-control"></textarea>
+  <label for="twenty">20</label><br>
+  <textarea name="twenty" id="twenty" class="form-control"></textarea>
+  <label for="ten">10</label><br>
+  <textarea name="ten" id="ten" class="form-control"></textarea>
+  <br />
+  
+  <div align="bottom center">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+{% endblock %}
